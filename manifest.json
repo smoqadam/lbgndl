@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "LibGen Search",
+    "version": "1.0",
+    "description": "Search interface for library resources",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "contextMenus",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://libgen.is/*",
+      "https://library.lol/*",
+      "https://covers.openlibrary.org/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }

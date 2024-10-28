@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LibGen Search</title>
+    <style>
+        body {
+            width: 700px;
+            padding: 16px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        
+        .search-controls {
+            margin-bottom: 16px;
+            display: flex;
+            gap: 8px;
+        }
+        
+        #query {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        #searchType {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        #searchButton {
+            padding: 8px 16px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        #searchButton:hover {
+            background: #0052a3;
+        }
+        
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .results-table th, .results-table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        .book-info {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .book-cover {
+            width: 80px;
+            height: 120px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+        
+        .book-details h3 {
+            margin: 0 0 8px 0;
+        }
+        
+        .book-metadata {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .download-links {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .download-link {
+            padding: 4px 8px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .download-link:hover {
+            background: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-controls">
+        <input type="text" id="query" placeholder="Search LibGen...">
+        <select id="searchType">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="isbn">ISBN</option>
+        </select>
+        <button id="searchButton">Search</button>
+    </div>
+    
+    <div id="results">
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>Book Information</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+        </table>
+    </div>
+    
+    <script src="book.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

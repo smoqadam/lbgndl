@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terms of Use & Disclaimer</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 24px;
+        }
+
+        .important {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        .accept-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .accept-button:hover {
+            background-color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Terms of Use & Disclaimer</h1>
+    
+    <div class="section">
+        <h2>1. Purpose of the Extension</h2>
+        <p>This browser extension is designed solely as a search interface tool that helps users search and discover bibliographic information from publicly available sources. It functions similarly to a specialized search engine for academic and literary works.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Disclaimer</h2>
+        <p>This extension is provided "as is" without any warranties of any kind, either express or implied. The developers of this extension:</p>
+        <ul>
+            <li>Do not host, store, or distribute any content</li>
+            <li>Do not control or verify the legality of external content</li>
+            <li>Are not responsible for the content found through searches</li>
+            <li>Do not encourage or promote copyright infringement</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. User Responsibilities</h2>
+        <p>By using this extension, you acknowledge and agree that:</p>
+        <ul>
+            <li>You will use this tool in accordance with all applicable laws</li>
+            <li>You are responsible for verifying the legality of any content you access or download</li>
+            <li>You will respect intellectual property rights</li>
+            <li>You will use this tool for legitimate research and educational purposes only</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Intellectual Property</h2>
+        <p>This extension respects intellectual property rights and is designed for:</p>
+        <ul>
+            <li>Searching and discovering bibliographic information</li>
+            <li>Accessing legally available content</li>
+            <li>Educational and research purposes</li>
+            <li>Finding public domain materials</li>
+        </ul>
+    </div>
+
+    <div class="important">
+        <strong>Important Notice:</strong>
+        <p>This extension is a search tool only. Users are solely responsible for ensuring their use of any discovered content complies with applicable laws and regulations in their jurisdiction. The extension developers do not promote, encourage, or condone any unauthorized access to copyrighted materials.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Limitation of Liability</h2>
+        <p>Under no circumstances shall the developers be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from the use of this extension.</p>
+    </div>
+
+    <button id="acceptButton" class="accept-button">I Understand and Accept</button>
+
+    <script>
+        document.getElementById('acceptButton').addEventListener('click', () => {
+            // Store acceptance in chrome.storage
+            chrome.storage.local.set({ 'termsAccepted': true }, () => {
+                // Close the terms page and open the popup
+                window.close();
+            });
+        });
+    </script>
+</body>
+</html>
