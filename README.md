@@ -11,10 +11,10 @@ A simple Chrome extension that allows you to search Library Genesis directly fro
 
 ## Screenshots
 
-![Context Menu Search](https://github.com/user-attachments/assets/f61e8776-601b-47bc-a449-d795def633c1)
+![Context Menu Search](https://github.com/user-attachments/assets/e8f97951-a847-4c0a-9648-05bf923362d0)
 *Right-click any selected text to search*
 
-![Search Results](https://github.com/user-attachments/assets/e8f97951-a847-4c0a-9648-05bf923362d0)
+![Search Results](https://github.com/user-attachments/assets/f61e8776-601b-47bc-a449-d795def633c1)
 *Clean interface showing book details and download options*
 
 
