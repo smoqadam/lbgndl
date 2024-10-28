@@ -1,3 +1,4 @@
+// the logic stolen from: https://github.com/Factual0367/libgenapi/blob/main/libgenapi.go
 class Book {
     constructor() {
         this.id = '';
