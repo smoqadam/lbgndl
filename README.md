@@ -5,7 +5,7 @@ A simple Firefox extension that allows you to search Library Genesis directly fr
 
 ## Installation Guide
 1. Download or clone this repository
-2. Open Chrome and go to `about:debugging`
+2. Open Firefox and go to `about:debugging`
 3. Click on "This Firefox" on the left
 4. "Load Temporary Add-on..."
 5. Select any file inside the "lbgndl" directory
