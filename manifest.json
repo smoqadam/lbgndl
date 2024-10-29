@@ -19,5 +19,11 @@
     },
     "background": {
       "scripts": ["background.js"]
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "saeed.moqadam@gmail.com",
+        "strict_min_version": "109.0"
+      }
     }
   }
