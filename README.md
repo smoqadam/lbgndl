@@ -1,6 +1,6 @@
 # LibGen Search Extension
 
-A simple Chrome extension that allows you to search Library Genesis directly from your browser. Select any text, right-click, and search for books.
+A simple Chrome/[Firefox](https://github.com/smoqadam/lbgndl/tree/firefox) extension that allows you to search Library Genesis directly from your browser. Select any text, right-click, and search for books.
 
 
 ## Installation Guide
