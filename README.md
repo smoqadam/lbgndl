@@ -3,7 +3,12 @@
 A simple Chrome/[Firefox](https://github.com/smoqadam/lbgndl/tree/firefox) extension that allows you to search Library Genesis directly from your browser. Select any text, right-click, and search for books.
 
 
-## Installation Guide
+## Installation Guide for Firefox
+The extension is available via: https://addons.mozilla.org/en-US/firefox/addon/libgen-search/
+
+or you can use the [firefox](https://github.com/smoqadam/lbgndl/tree/firefox) branch to install it manually.
+
+## Installation Guide for Chrome
 1. Download or clone this repository
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable "Developer mode" in top-right corner
